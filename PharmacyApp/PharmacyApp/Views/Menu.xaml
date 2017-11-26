@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PharmacyApp.Views.MenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#81C784">
+            <Button Text="Home" TextColor="#81C784" BackgroundColor="White" BorderRadius="1000"  Command="{Binding GoHomeCommand}" />
+            <Button Text="Second Page" TextColor="#81C784" BackgroundColor="White" BorderRadius="67" Command="{Binding GoSecondCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
